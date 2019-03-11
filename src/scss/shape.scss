@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'light';
+  src: url(../fonts/Gilroy-Light.otf);
+}
+img {
+  width: 100%;
+  padding: 20px;
+}
+@media only screen and (min-width: 992px) {
+  img {
+   padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo__description {
+    font-family: 'gilroy';
+    font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+  .case__description {
+    font-size: 1.5rem;
+  }
+}
+
+.logo {
+  padding: 29px 30px;
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: 'gilroy';
+  }
+}
+
+.caseStudy {
+  padding: 29px 30px;
+  padding-top: 50px;
+
+  .boss {
+    font-family: 'gilroy';
+    font-size: 40px;
+      background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.2em;
+      background-position: 0 88%; 
+  }
+}
+
+.case__description {
+
+  font-family: 'light';
+  padding: 29px 30px;
+
+  span {
+    font-family: 'gilroy';
+  }
+}
+
+.picture {
+  transition: transform 0.25s;
+  will-change: transform;
+}
+
+

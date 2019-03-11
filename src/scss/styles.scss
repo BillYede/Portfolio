@@ -1,0 +1,329 @@
+@import 'reset';
+@import 'shape';
+@import 'ActeIV';
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+$font-title: 'gilroy';
+$font-text: 'light';
+@mixin gradient-underline {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 88%; 
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: 'luxury';
+  src: url(../fonts/Glamor-Light.otf);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(../fonts/Gilroy-Light.otf);
+  }
+
+body {
+  background-color: #f1efe9;
+}
+
+.header {
+    line-height: 2.75rem;
+    margin-left: 1.25rem;
+    font-family: $font-title;
+    font-size: 0.8125rem;
+    margin-right: 1.25rem;
+}
+
+h2 {
+    font-family: $font-title;
+}
+
+.portfolio {
+  text-align: center;
+
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+      font-size: 1.5rem;
+      padding: 4em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio {
+      text-align: center;
+      }
+}
+
+@media only screen and (min-width: 992px) {
+    .keys {
+        font-size: 16px;
+
+        p {
+            font-size: 1.2rem;  
+        }
+    }
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ece9e4;
+    
+    .footer {
+        padding-top: 3.125rem;
+        padding-bottom: 2.5rem;
+
+        a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        font-family: $font-title;
+        font-size: 0.875rem;
+        }
+    }
+
+    p {
+        font-family: $font-title;
+        padding: 0.625rem;
+        font-size: 0.875rem;
+    }
+}
+
+.but {
+  font-family: $font-title;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer__informations {
+      font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio__description {
+      font-size: 1.5rem;
+      font-family: $font-title;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio__title {
+      font-size: 1.5rem;
+    }
+}
+
+
+.portfolio__link {
+    text-decoration: none;
+    color: black;
+}
+
+.header__description {
+   @include gradient-underline;
+}
+
+.portfolio__description {
+    @include gradient-underline;
+}
+
+.footer__informations {
+    @include gradient-underline;
+}
+
+.keys {
+    padding: 10px;
+    font-family: $font-text;
+    font-size: 0.875rem;
+    display: flex;
+    
+
+    p {
+    background: rgb(238,174,202);
+    flex-wrap: wrap;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 88%;
+    margin: 10px;
+
+    }
+}
+
+.portfolio__title {
+    padding: 10px;
+    font-family: $font-text;
+    font-size: 0.875rem;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    } 
+    100% {
+      opacity: 1;
+    }
+  }
+ 
+@media only screen and (min-width: 992px) {
+
+  .container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 40px;
+  }
+
+  .uni {
+    padding: 50px;
+  }
+
+  .numero {
+    position: absolute;
+    font-size: 80px;
+    top: 50px;
+    font-family: 'luxury';
+  }
+}
+
+.numero {
+  text-align: right;
+  font-family: 'luxury';
+}
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  }
+
+  .uni {
+    padding: 20px;
+  }
+
+.box {
+  width: 51vmin;
+  height: 51vmin;
+}
+
+.spin-container {
+  width: 100%;
+  height: 100%;
+  animation: spin 12s linear infinite;
+  position: relative;
+}
+
+.shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url("../assets/simone-hutsch-750870-unsplash-compressor\ \(1\)\ \(1\).jpg");
+  background-size: 100%;
+  background-position: center center;
+  display: flex;
+  color: #003;
+  font-size: 5vw;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  animation: spin 12s linear infinite reverse;
+  opacity: 1;
+  z-index: 2;
+}
+
+.bd1 {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url("../assets/adrien-olichon-764549-unsplash\ \(1\).jpg");
+  background-size: 100%;
+  background-position: center center;
+  animation: spin 12s linear infinite reverse;
+}
+
+.bd2 {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url("../assets/augustin-de-montesquiou-426625-unsplash-compressor\ \(1\).jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: spin 12s linear infinite reverse;
+}
+
+.bd3 {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url("../assets/gilets2.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: spin 12s linear infinite reverse;
+  z-index: 2;
+}
+
+@keyframes morph {
+  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+  100% {border-radius: 40% 60%;} 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+
+
+
+
+  
+
+
+  
+
+
+
