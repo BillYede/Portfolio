@@ -2,8 +2,6 @@
 @import 'shape';
 @import 'ActeIV';
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -102,7 +100,7 @@ footer {
     }
 }
 
-.but {
+.discover {
   font-family: $font-title;
 }
 
@@ -194,7 +192,7 @@ footer {
     padding: 50px;
   }
 
-  .numero {
+  .container__box--numero {
     position: absolute;
     font-size: 80px;
     top: 50px;
@@ -202,7 +200,7 @@ footer {
   }
 }
 
-.numero {
+.container__box--numero {
   text-align: right;
   font-family: 'luxury';
 }
@@ -220,12 +218,13 @@ footer {
     padding: 20px;
   }
 
-.box {
+.container__box {
   width: 51vmin;
   height: 51vmin;
 }
 
-.spin-container {
+.container__box--spin
+ {
   width: 100%;
   height: 100%;
   animation: spin 12s linear infinite;
@@ -243,7 +242,7 @@ footer {
   z-index: 5;
 }
 
-.bd {
+.case1 {
   width: 142%;
   height: 142%;
   position: absolute;
@@ -265,19 +264,7 @@ footer {
   z-index: 2;
 }
 
-.bd1 {
-  width: 142%;
-  height: 142%;
-  position: absolute;
-  left: -21%;
-  top: -21%;
-  background: url("../assets/stars.jpg");
-  background-size: 100%;
-  background-position: center center;
-  animation: spin 12s linear infinite reverse;
-}
-
-.bd2 {
+.case2 {
   width: 142%;
   height: 142%;
   position: absolute;
@@ -290,7 +277,7 @@ footer {
   animation: spin 12s linear infinite reverse;
 }
 
-.bd3 {
+.case3 {
   width: 142%;
   height: 142%;
   position: absolute;
