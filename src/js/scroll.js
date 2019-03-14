@@ -22,7 +22,7 @@ var rellax = new Rellax('header')
 var lerellax = new Rellax('.Form')
 
 
-const animate = document.querySelectorAll(".project2, .bill, .unble");
+const animate = document.querySelector(".first");
 
 animate.forEach(element => {
     element.style.opacity = 0
@@ -49,7 +49,7 @@ document.addEventListener("scroll", () => {
     fadeIn()
 })
 
-window.addEventListener("resize", () =>{
+window.addEventListener("resize", () => {
     fadeIn()
 })
 
