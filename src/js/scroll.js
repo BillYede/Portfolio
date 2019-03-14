@@ -1,5 +1,6 @@
 const Container = document.querySelector(".bill")
 const pics = document.querySelector(".picture")
+var rellax = new Rellax('header')
 let currentPixel = window.pageYOffset
 
 const loop = () => {
@@ -17,7 +18,7 @@ const loop = () => {
 
 loop();
 
-var rellax = new Rellax('.header')
+var rellax = new Rellax('header')
 var lerellax = new Rellax('.Form')
 
 
